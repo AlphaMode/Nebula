@@ -1,0 +1,4 @@
+name: Nebula
+version: ${project.version}
+main: alphamode.nebula.NebulaSpigot
+api-version: 1.16
