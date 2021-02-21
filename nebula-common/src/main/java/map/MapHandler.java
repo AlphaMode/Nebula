@@ -1,9 +1,9 @@
 package map;
 
-public class MapHandler {
 
-    public MapHandler() {
+public interface MapHandler {
 
-    }
-
+    void registerMaps();
+    Map getMap(String id);
+    void loadMap(String id);
 }
