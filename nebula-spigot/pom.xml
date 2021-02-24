@@ -43,6 +43,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>rapture-snapshots</id>
+            <url>https://repo.rapture.pw/repository/maven-snapshots/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -57,6 +61,11 @@
             <artifactId>nebula-common</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.grinderwolf</groupId>
+            <artifactId>slimeworldmanager-api</artifactId>
+            <version>2.5.4-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
