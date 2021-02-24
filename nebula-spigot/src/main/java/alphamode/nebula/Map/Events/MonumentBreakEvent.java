@@ -1,5 +1,6 @@
 package alphamode.nebula.Map.Events;
 
+import Utils.Location;
 import Utils.MonumentType;
 import game.Events.MonumentBreak;
 import game.Monument;
@@ -10,7 +11,7 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class MonumentBreakEvent extends Event implements MonumentBreak, Cancellable {
+public class MonumentBreakEvent extends Event implements Cancellable {
 
     private static final HandlerList HANDLERS_LIST = new HandlerList();
 
@@ -18,7 +19,7 @@ public class MonumentBreakEvent extends Event implements MonumentBreak, Cancella
     private boolean isCancelled;
     @Getter private final Monument monument;
 
-    public MonumentBreakEvent(Monument monument) {
+    public MonumentBreakEvent(Monument monument, Location broke) {
         this.monument = monument;
 
     }

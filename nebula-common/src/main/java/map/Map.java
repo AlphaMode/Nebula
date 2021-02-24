@@ -1,6 +1,7 @@
 package map;
 
 import game.Monument;
+import game.MonumentBase;
 import game.Team.Team;
 import jdk.nashorn.internal.runtime.JSONListAdapter;
 import lombok.Getter;
@@ -20,7 +21,8 @@ public class Map {
     @Getter private boolean isValid;
     @Getter private java.util.Map<String,Team> teams;
 
-    public Monument[] getMonuments(String teamId) {
+
+    public MonumentBase[] getTeamMonuments(String teamId) {
         return teams.get(teamId).getMonuments();
     }
 
